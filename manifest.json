@@ -1,0 +1,21 @@
+{
+    "name": "GEO DAILY",
+    "version": "1.0.0",
+    "description": "Envía manualmente track de Daily Challenge",
+    "manifest_version": 3,
+    "author": "Jona",
+    "action":{
+        "default_title": "Track Daily Challenge",
+        "default_icon": "favicon.png",
+        "default_popup": "index.html"
+    },
+    "content_scripts": [
+        {
+          "matches": [
+            "https://www.geoguessr.com/*/results/*",
+            "https://www.geoguessr.com/results/*"
+        ],
+          "js": ["scripts/content.js"]
+        }
+    ]
+}

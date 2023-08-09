@@ -6,7 +6,7 @@
     "author": "Jona",
     "action":{
         "default_title": "Track Daily Challenge",
-        "default_icon": "favicon.png",
+        "default_icon": "img/favicon.png",
         "default_popup": "index.html"
     },
     "content_scripts": [

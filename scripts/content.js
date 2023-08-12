@@ -25,5 +25,5 @@ async function postData() {
 postData().then(data => {
     window.open(server, '_self');
 }).catch(error => {
-    alert(error.message);
+    window.open('https://www.geoguessr.com/daily-challenges', '_self');
 });

@@ -1,4 +1,4 @@
-const server = 'http://127.0.0.1';
+const server = 'https://geotrack.yonathan.dev';
 
 async function postData() {
     const nextdata = JSON.parse(document.getElementById("__NEXT_DATA__").textContent);

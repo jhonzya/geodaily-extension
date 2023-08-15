@@ -1,13 +1,18 @@
 {
     "name": "GEO DAILY",
-    "version": "1.0.0",
-    "description": "Envía manualmente track de Daily Challenge",
+    "version": "0.0.1",
+    "description": "Guarda manualmente track de Daily Challenge",
     "manifest_version": 3,
     "author": "Jona",
     "action":{
         "default_title": "Track Daily Challenge",
-        "default_icon": "img/favicon.png",
+        "default_icon": "icons/100.png",
         "default_popup": "index.html"
+    },
+    "icons": {
+      "50": "icons/50.png",
+      "100": "icons/100.png",
+      "128": "icons/128.png"
     },
     "content_scripts": [
         {
@@ -17,5 +22,8 @@
         ],
           "js": ["scripts/content.js"]
         }
+    ],
+    "host_permissions": [
+      "https://geotrack.yonathan.dev/api/*"
     ]
 }

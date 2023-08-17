@@ -1,4 +1,4 @@
-const server = 'https://geotrack.yonathan.dev';
+const server = 'https://geotrack.joelcuevas.com';
 
 async function postData() {
     const nextdata = JSON.parse(document.getElementById("__NEXT_DATA__").textContent);

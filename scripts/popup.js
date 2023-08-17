@@ -1,4 +1,4 @@
-const server = 'https://geotrack.yonathan.dev';
+const server = 'https://geotrack.joelcuevas.com';
 let url = 'https://www.geoguessr.com/';
 
 async function getDailyChallenge() {

@@ -19,11 +19,13 @@ async function postData() {
         throw new Error(message);
     }
 
-    const json = await response.json();
+    return await response.json();
 }
 
 postData().then(data => {
-    window.open(server, '_self');
+    if(data.redirect) {
+        window.open(data.route, '_self');
+    }
 }).catch(error => {
     window.open('https://www.geoguessr.com/daily-challenges', '_self');
 });

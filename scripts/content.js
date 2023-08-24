@@ -5,13 +5,16 @@ async function postData() {
     const { challengeToken } = nextdata.props.pageProps;
     const { gamePlayedByCurrentUser } = nextdata.props.pageProps;
 
+    const urlParams = new URLSearchParams(window.location.search);
+    const forceRedirect = urlParams.get('forceRedirect');
+
     const response = await fetch(`${server}/api/track`, {
         method: "POST",
         headers: {
             'Accept': 'application/json, text/plain, */*',
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ challengeToken, gamePlayedByCurrentUser })
+        body: JSON.stringify({ challengeToken, gamePlayedByCurrentUser, forceRedirect })
     });
 
     if (! response.ok) {

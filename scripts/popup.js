@@ -13,7 +13,7 @@ async function getDailyChallenge() {
 }
 
 getDailyChallenge().then(data => {
-   url = 'https://www.geoguessr.com/results/' + data.token;
+   url = 'https://www.geoguessr.com/results/' + data.token + '?forceRedirect=true';
 });
 
 function openIndex() {
